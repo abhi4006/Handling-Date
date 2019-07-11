@@ -1,0 +1,7 @@
+var startDate = document.getElementById("fromDateId").value;
+var endDate = document.getElementById("toDateId").value;
+var sdate=new Date(startDate);
+var edate=new Date(endDate);
+	
+var diffTime = Math.abs(sdate.getTime() - edate.getTime());
+var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
